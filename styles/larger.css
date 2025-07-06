@@ -1,0 +1,53 @@
+@media (min-width: 38rem) {
+
+    header {
+        grid-template-columns: 30px auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--primary-color);
+        margin: 0 1rem;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    h1 {
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1.5rem;
+    }
+
+    .certificate {
+
+        grid-column: 1/3;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .about-me p {
+        padding: 1.5rem;
+        color: var(--primary-color);
+    }
+
+}
