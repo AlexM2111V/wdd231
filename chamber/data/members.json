@@ -1,0 +1,65 @@
+[
+    {
+        "name": "BrightTech Solutions",
+        "address": "123 Innovation Dr",
+        "phone": "123456789",
+        "website": "https://brighttech.com",
+        "image": "brighttech.png",
+        "membershipLevel": 3,
+        "description": "Cutting-edge software solutions for growing businesses."
+    },
+    {
+        "name": "GreenLife Market",
+        "address": "456 Nature Blvd",
+        "phone": "987654321",
+        "website": "https://greenlife.com",
+        "image": "greenlife.jpeg",
+        "membershipLevel": 2,
+        "description": "Organic products and sustainable living."
+    },
+    {
+        "name": "SafeHome Security",
+        "address": "789 Guardian Way",
+        "phone": "333222111",
+        "website": "https://safehome.pe",
+        "image": "safehome.png",
+        "membershipLevel": 1,
+        "description": "Reliable home and office security systems."
+    },
+    {
+        "name": "Inka Travel Co.",
+        "address": "101 Andes Ave",
+        "phone": "444555666",
+        "website": "https://inkatravel.pe",
+        "image": "inkatravel.png",
+        "membershipLevel": 3,
+        "description": "Adventures and tours across Peru."
+    },
+    {
+        "name": "PeruDesign Studio",
+        "address": "202 Creative Park",
+        "phone": "123789456",
+        "website": "https://perudesign.pe",
+        "image": "perudesign.jpeg",
+        "membershipLevel": 2,
+        "description": "Professional graphic and web design services."
+    },
+    {
+        "name": "HealthPlus Clinic",
+        "address": "303 Wellness Rd",
+        "phone": "567890123",
+        "website": "https://healthplus.pe",
+        "image": "healthplus.png",
+        "membershipLevel": 1,
+        "description": "Caring for your family’s health."
+    },
+    {
+        "name": "SmartEdu Academy",
+        "address": "404 Learning Lane",
+        "phone": "222333444",
+        "website": "https://smartedu.pe",
+        "image": "smartedu.png",
+        "membershipLevel": 3,
+        "description": "Education for the future."
+    }
+]
