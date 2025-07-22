@@ -11,7 +11,7 @@ header img {
     margin-right: auto;
 }
 
-header h1 {
+header span {
     font-size: 1.7rem;
 }
 
@@ -42,6 +42,10 @@ header h1 {
 
 .current {
     border-bottom: solid 1px var(--primary-color);
+}
+
+h1 {
+    font-size: 1.7rem;
 }
 
 .buttons {
