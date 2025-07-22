@@ -31,7 +31,7 @@ const displayCompanies = (companies) => {
 
         card.innerHTML = `
       <img src="images/${company.image}" alt="Logo of ${company.name}" loading="lazy">
-      <h3>${company.name}</h3>
+      <h2>${company.name}</h2>
       <p><strong>Address:</strong> ${company.address}</p>
       <p><strong>Phone:</strong> ${company.phone}</p>
       <p><strong>Website:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
@@ -53,12 +53,11 @@ function getMembershipName(level) {
 loadCompanies();
 
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
     display.classList.add("grid");
     display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
     display.classList.add("list");
