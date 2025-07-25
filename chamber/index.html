@@ -35,24 +35,25 @@
             <ul>
                 <li><a class="current" href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="../join.html">Join</a></li>
-                <li><a href="../discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main class="home">
-        <section class="hero">
+        <div class="hero">
             <picture>
                 <source srcset="images/hero-small.webp" media="(max-width: 400px)">
                 <source srcset="images/hero-medium.webp" media="(max-width: 900px)">
                 <img id="hero" src="images/hero.webp" alt="lima-main-square">
             </picture>
-        </section>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </div>
         <h1>Home</h1>
         <div id="info">
             <div class="info-card" id="events-card">
                 <h2>Events</h2>
-                <img src="" alt="">
+                <ul class="events-list"></ul>
             </div>
             <div class="info-card" id="current-weather">
                 <h2>Current Weather</h2>
