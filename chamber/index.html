@@ -21,9 +21,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/common.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -33,24 +33,46 @@
         <button id="menu" class="menu" aria-label="Open main menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="current" href="directory.html">Directory</a></li>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="../join.html">Join</a></li>
                 <li><a href="../discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Business Directory</h1>
-        <div class="buttons">
-            <button id="list">
-                <img src="../chamber/images/list.svg" alt="list icon" width="24" height="24">
-            </button>
-            <button id="grid">
-                <img src="../chamber/images/grid.svg" alt="grid icon" width="24" height="24">
-            </button>
+    <main class="home">
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 900px)">
+                <img id="hero" src="images/hero.webp" alt="lima-main-square">
+            </picture>
+        </section>
+        <h1>Home</h1>
+        <div id="info">
+            <div class="info-card" id="events-card">
+                <h2>Events</h2>
+                <img src="" alt="">
+            </div>
+            <div class="info-card" id="current-weather">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption><strong id="description"></strong></figcaption>
+                </figure>
+                <div id="weather-data">
+                    <p><strong>Temp: </strong><span id="temperature"></span></p>
+                    <p><strong>High: </strong><span id="high"></span></p>
+                    <p><strong>Low: </strong><span id="low"></span></p>
+                    <p><strong>Humidity: </strong><span id="humidity"></span></p>
+                </div>
+            </div>
+            <div class="info-card" id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-list"></div>
+            </div>
         </div>
-        <article class="grid"></article>
+        <div id="spotlight" class="spotlight-container"></div>
     </main>
     <footer>
         <div class="social">
