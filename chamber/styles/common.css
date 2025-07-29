@@ -20,6 +20,8 @@ header {
     align-items: center;
     border-bottom: 1px solid var(--primary-color);
     padding: 0.7rem;
+    background-color: var(--primary-color);
+    min-height: 60px;
 }
 
 header.show {
@@ -33,16 +35,17 @@ header img {
 }
 
 header span {
-    font-size: 1.1rem;
-    color: var(--primary-color)
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
 }
 
 #menu {
     background: none;
     border: none;
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     cursor: pointer;
-    color: var(--primary-color);
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
@@ -61,6 +64,10 @@ header span {
     display: none;
 }
 
+
+header.show {
+    padding-top: 1.4rem;
+}
 .navigation.show {
     display: flex;
     grid-row: 2;
@@ -82,9 +89,9 @@ header span {
 .navigation a {
     display: block;
     text-decoration: none;
-    color: var(--primary-color);
+    color: white;
     padding: .5rem 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -92,8 +99,9 @@ header span {
     background-color: #D4A253;
 }
 
-.current {
+.navigation .current {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /**************************** FOOTER ******************************/
@@ -158,6 +166,7 @@ footer p {
 
     header span {
         font-size: 1.7rem;
+        text-align: left;
     }
 
     .navigation {
@@ -179,14 +188,16 @@ footer p {
     }
 
     .navigation a {
-        color: var(--primary-color);
+        color: white;
         text-decoration: none;
         border: none;
         font-size: 1.5rem;
     }
 
     .current {
-        border-bottom: solid 1px var(--primary-color);
+        border-bottom: solid 1px white;
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     h1 {

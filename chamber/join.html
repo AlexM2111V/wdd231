@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molina Chamber of Commerce Join Page</title>
+    <meta name="author" content="Alexander Mendoza">
+    <meta name="description"
+        content="This is the join page for the Molina Chamber of Commerce project in the WDD231 course.">
+    <meta property="og:title" content="Molina Chamber of Commerce Join Page - Alexander Mendoza">
+    <meta property="og:description"
+        content="Become a part of the Molina Chamber of Commerce and discover business opportunities, community events, and economic growth initiatives.">
+    <meta property="og:url" content="https://alexm2111v.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://alexm2111v.github.io/wdd231/chamber/images/meta-image.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../chamber/images/logo.svg" alt="profile-picture">
+        <span>Molina Chamber of Commerce</span>
+        <button id="menu" class="menu" aria-label="Open main menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="current" href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <div class="form">
+            <h1>Join Our Chamber</h1>
+            <form method="get" action="thankyou.html" id="membership-form">
+                <label>First Name:
+                    <input type="text" name="firstName" title="Enter your first name" required
+                        autocomplete="given-name">
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" title="Enter your last name" required autocomplete="family-name">
+                </label>
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgTitle"
+                        title="Enter your organizational title (letters, spaces, hyphens only)"
+                        autocomplete="organization-title" pattern="[A-Za-z\s-]{3,}">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email address" placeholder="example@mail.com"
+                        required autocomplete="email">
+                </label>
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="mobile" title="Enter your mobile phone number" required autocomplete="tel">
+                </label>
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization" title="Enter your organization name" required
+                        autocomplete="organization">
+                </label>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="membership" value="Bronze" required>Bronze</label>
+                        <label><input type="radio" name="membership" value="Silver">Silver</label>
+                        <label><input type="radio" name="membership" value="Gold">Gold</label>
+                        <label><input type="radio" name="membership" value="NP">NP</label>
+                    </div>
+                </fieldset>
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Enter your business description" rows="5"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+        <div class="membership-cards">
+            <h1>Membership Levels</h1>
+
+            <div class="card np">
+                <h2>Non-Profit Membership</h2>
+                <button popovertarget="popover-np" class="apply-button">Learn now</button>
+            </div>
+
+            <div class="card bronze">
+                <h2>Bronze Membership</h2>
+                <button popovertarget="popover-bronze" class="apply-button">Learn now</button>
+            </div>
+
+            <div class="card silver">
+                <h2>Silver Membership</h2>
+                <button popovertarget="popover-silver" class="apply-button">Learn now</button>
+            </div>
+
+            <div class="card gold">
+                <h2>Gold Membership</h2>
+                <button popovertarget="popover-gold" class="apply-button">Learn now</button>
+            </div>
+        </div>
+
+        <!-- Popovers -->
+        <dialog id="popover-np" popover>
+            <button class="close-btn" popovertarget="popover-np" popovertargetaction="hide">&times;</button>
+            <h3>Non-Profit Benefits</h3>
+            <p>
+                Designed with purpose-driven organizations in mind, our Non-Profit Membership gives you access to key
+                tools and events that help amplify your mission — without stretching your budget.
+            </p>
+            <ul class="bulleted">
+                <li>Free training sessions</li>
+                <li>Networking events</li>
+                <li>Basic event discounts</li>
+                <li>Homepage listing</li>
+            </ul>
+        </dialog>
+
+        <dialog id="popover-bronze" popover>
+            <button class="close-btn" popovertarget="popover-bronze" popovertargetaction="hide">&times;</button>
+            <h3>Bronze Benefits</h3>
+            <p>
+                A solid start for individuals and small teams looking to connect, learn, and grow.
+                Bronze Membership gives you essential perks and early access to community opportunities.
+            </p>
+            <ul class="bulleted">
+                <li>10% off events</li>
+                <li>Priority registration</li>
+                <li>Member-only webinars</li>
+            </ul>
+        </dialog>
+
+        <dialog id="popover-silver" popover>
+            <button class="close-btn" popovertarget="popover-silver" popovertargetaction="hide">&times;</button>
+            <h3>Silver Benefits</h3>
+            <p>
+                Ready to grow your reach? Silver members enjoy boosted visibility and access to exclusive content,
+                making it easier to scale your presence and deepen connections.
+            </p>
+            <ul class="bulleted">
+                <li>25% off events</li>
+                <li>Featured directory listing</li>
+                <li>Access to recordings</li>
+                <li>Private meetups</li>
+            </ul>
+        </dialog>
+
+        <dialog id="popover-gold" popover>
+            <button class="close-btn" popovertarget="popover-gold" popovertargetaction="hide">&times;</button>
+            <h3>Gold Benefits</h3>
+            <p>
+                Unlock elite access to our most powerful features. Gold members are always one step ahead — with premium
+                visibility, deep discounts, and insider perks designed to elevate your impact.
+            </p>
+            <ul class="bulleted">
+                <li>50% off all events</li>
+                <li>Homepage spotlight</li>
+                <li>Strategy consultations</li>
+                <li>Early access to features</li>
+            </ul>
+        </dialog>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/AlexM2111V/wdd231" target="_blank"><img src="images/github.svg"
+                    alt="github page" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/alexander-mendoza-v" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin" width="16" height="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16"
+                    height="16"></a>
+        </div>
+        <p>WDD231 Class Project</p>
+        <p>Alexander Mendoza</p>
+        <p>&copy; <span id="currentYear"></span> Molina Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
