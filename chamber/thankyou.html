@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Directory Molina Chamber</title>
+    <title>Molina Chamber of Commerce Join Page</title>
     <meta name="author" content="Alexander Mendoza">
     <meta name="description"
-        content="This is the chamber directory page for the Chamber of Commerce project in the WDD231 course.">
-    <meta property="og:title" content="Chamber Directory - Alexander Mendoza">
+        content="This is the join page for the Molina Chamber of Commerce project in the WDD231 course.">
+    <meta property="og:title" content="Molina Chamber of Commerce Join Page - Alexander Mendoza">
     <meta property="og:description"
-        content="Explore our Chamber of Commerce Member Directory — connect with trusted local businesses and service providers in your community.">
-    <meta property="og:url" content="https://alexm2111v.github.io/wdd231/chamber/directory.html">
+        content="Become a part of the Molina Chamber of Commerce and discover business opportunities, community events, and economic growth initiatives.">
+    <meta property="og:url" content="https://alexm2111v.github.io/wdd231/chamber/join.html">
     <meta property="og:image" content="https://alexm2111v.github.io/wdd231/chamber/images/meta-image.png">
     <meta property="og:type" content="website">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -21,11 +20,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <script src="scripts/common.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
-
 <body>
     <header>
         <img src="../chamber/images/logo.svg" alt="profile-picture">
@@ -34,28 +32,19 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a class="current" href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Business Directory</h1>
-        <div class="buttons">
-            <button id="list">
-                <img src="../chamber/images/list.svg" alt="list icon" width="24" height="24">
-            </button>
-            <button id="grid">
-                <img src="../chamber/images/grid.svg" alt="grid icon" width="24" height="24">
-            </button>
-        </div>
-        <article class="grid"></article>
+        <p id="results"></p>
     </main>
     <footer>
         <div class="social">
-            <a href="https://github.com/AlexM2111V/wdd231" target="_blank"><img src="images/github.svg"
-                    alt="github page" width="16" height="16"></a>
+            <a href="https://github.com/AlexM2111V/wdd231" target="_blank"><img src="images/github.svg" alt="github page"
+                    width="16" height="16"></a>
             <a href="https://www.linkedin.com/in/alexander-mendoza-v" target="_blank"><img src="images/linkedin.svg"
                     alt="linkedin" width="16" height="16"></a>
             <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
@@ -68,5 +57,4 @@
         <p id="lastModified"></p>
     </footer>
 </body>
-
 </html>
