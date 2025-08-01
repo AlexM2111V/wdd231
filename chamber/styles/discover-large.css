@@ -1,0 +1,10 @@
+@media only screen and (min-width: 64rem) {
+
+    main {
+        max-width: 1400px;
+    }
+
+    #places {
+        grid-template-columns: 1fr 1fr;
+    }
+}

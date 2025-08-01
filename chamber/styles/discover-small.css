@@ -1,0 +1,72 @@
+main {
+
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+#places {
+    display: grid;
+    gap: 10px;
+}
+
+section {
+    display: grid;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.place-card {
+    overflow: hidden;
+    display: grid;
+    padding: 1rem;
+    border-radius: 10px;
+    grid-template-areas:
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
+}
+
+.place-card h2 {
+    margin: 0.7rem;
+}
+
+.place-card img {
+    width: 100%;
+    max-width: 300px;
+    grid-area: image;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.place-card p {
+    grid-area: description;
+    margin: 15px 12px;
+}
+
+.place-card address {
+    grid-area: address;
+    margin-bottom: 10px;
+}
+
+.place-card button {
+    grid-area: button;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    justify-self: center;
+}
+
+#visit-message {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}

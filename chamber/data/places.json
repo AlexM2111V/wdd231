@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Circuito Mágico del Agua",
+        "address": "Av. Carlos Zubiaga 121, Pueblo Libre",
+        "cost": "35",
+        "description": "A spectacular evening display of 13 illuminated fountains with music and interactive water tunnels—the world’s largest fountain complex.",
+        "image": "parque-aguas.webp"
+    },
+    {
+        "name": "Parque del Amor",
+        "address": "Malecón de la Reserva, Miraflores",
+        "cost": "10",
+        "description": "Ocean‑front mosaic park known for its romantic sculpture “El Beso” and sunset views, perfect for couples and photography.",
+        "image": "parque-amor.webp"
+    },
+    {
+        "name": "Huaca Pucllana",
+        "address": "Calle General Borgoño 831, Miraflores",
+        "cost": "28",
+        "description": "Pre‑Inca adobe pyramid in the heart of Miraflores, with guided tours, on‑site museum, native flora and night illumination.",
+        "image": "huaca-pucllana.webp"
+    },
+    {
+        "name": "Larcomar",
+        "address": "Malecón de la Reserva 610, Miraflores",
+        "cost": "30",
+        "description": "Cliff‑side shopping mall with ocean views, restaurants, cinemas, night-life, and boutique shops—a milestone of modern Lima.",
+        "image": "larcomar.webp"
+    },
+    {
+        "name": "Museo Larco",
+        "address": "Av. Simón Bolívar 1515, Pueblo Libre",
+        "cost": "22",
+        "description": "Archaeological museum displaying 5,000 years of pre‑Columbian art, ceramics and erotic artifacts—housed in a vice‑royal mansion.",
+        "image": "museo-larco.webp"
+    },
+    {
+        "name": "Parque Kennedy",
+        "address": "Av. José Larco, Miraflores",
+        "cost": "15",
+        "description": "Central Miraflores park known for its friendly cats, artisan markets, street performances and local social atmosphere.",
+        "image": "parque-kennedy.webp"
+    },
+    {
+        "name": "Puente de los Suspiros",
+        "address": "Av. Paseo de la Republica 872, Barranco",
+        "cost": "30",
+        "description": "Iconic wooden pedestrian bridge in bohemian Barranco—legend says couples make a wish while holding their breath crossing it.",
+        "image": "puente-suspiros.webp"
+    },
+    {
+        "name": "Museo Pedro de Osma",
+        "address": "Av. Pedro de Osma 409, Barranco",
+        "cost": "18",
+        "description": "Art museum in a beautiful Barranco mansion showing colonial art, sculptures and gardens—a peaceful cultural retreat.",
+        "image": "museo-osma.webp"
+    }
+]
