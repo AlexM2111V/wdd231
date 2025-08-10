@@ -1,3 +1,12 @@
+h1 {
+    color: var(--third-color);
+    text-align: center;
+}
+
+main>p{
+    color: var(--third-color);
+}
+
 .filters {
     display: flex;
     flex-wrap: wrap;
@@ -14,10 +23,6 @@
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid var(--third-color);
-}
-
-h1 {
-    text-align: center;
 }
 
 .city-info p{
@@ -84,7 +89,7 @@ footer {
     padding: 20px 0;
 }
 
-.city-info h1 {
+h2 {
     align-self: center;
     margin: 0;
 }

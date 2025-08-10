@@ -1,4 +1,4 @@
-const hambutton = document.querySelector(".menu");
+const hambutton = document.querySelector("#menu");
 const mainnav = document.querySelector('#nav-bar');
 const header = document.querySelector('header');
 

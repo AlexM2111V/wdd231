@@ -17,7 +17,7 @@ async function apiFetchCurrentWeather(lat, lon) {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        console.error("Error loading weather:", error);
     }
 }
 
@@ -29,8 +29,6 @@ async function showPlaces(cityName) {
         const places = await response.json();
 
         const filtered = places.filter(place => place.city === cityName);
-
-        console.log(filtered);
 
         const container = document.getElementById('places');
         container.innerHTML = "";
@@ -50,7 +48,7 @@ async function showPlaces(cityName) {
         const weather = await apiFetchCurrentWeather(filtered[0].latitude, filtered[0].longitude);
 
         info.innerHTML = `
-            <h1>${filtered[0].city}</h1>
+            <h2>${filtered[0].city}</h2>
             <p>${filtered[0]['city-info']} ${weather.main.temp}&deg;C.</p>
             `;
         container.appendChild(cityInfo);
@@ -66,7 +64,7 @@ async function showPlaces(cityName) {
 
             card.innerHTML = `
                 <img src="images/${place.image}" alt="image of ${place.name}" loading="lazy">
-                <h2>${place.name}</h2>
+                <h3>${place.name}</h3>
                 <address>${place.address}</address>
                 <p>${place.description}</p>
                 `;
