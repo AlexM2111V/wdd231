@@ -12,8 +12,6 @@ async function apiFetchCurrentWeather(lat, lon) {
         const response = await fetch(weatherUrl);
         if (response.ok) {
             const data = await response.json();
-            // displayResults(data);
-            console.log(data);
             return data;
         } else {
             throw Error(await response.text());
@@ -25,7 +23,7 @@ async function apiFetchCurrentWeather(lat, lon) {
 
 async function showPlaces(cityName) {
     try {
-        const response = await fetch("/finalproject/data/places.json");
+        const response = await fetch("data/places.json");
         if (!response.ok) throw new Error("Failed to fetch places data.");
 
         const places = await response.json();
@@ -45,7 +43,7 @@ async function showPlaces(cityName) {
         flag.innerHTML = `
             <img src="images/${filtered[0].flag}" alt="image of ${filtered[0].city}" loading="lazy">
             `;
-        
+
         const info = document.createElement("div");
         info.classList.add("info");
 
@@ -61,7 +59,7 @@ async function showPlaces(cityName) {
 
         const placesSection = document.createElement("div");
         placesSection.classList.add("places-section");
- 
+
         filtered.forEach(place => {
             const card = document.createElement("section");
             card.classList.add("place-card");
