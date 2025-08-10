@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Stay in the Best Cities Across South America",
+        "description": "Discover handpicked rooms in major cultural and tourist hubs like Lima, Buenos Aires, Rio de Janeiro, and more.",
+        "image": "images/cityscape.png"
+    },
+    {
+        "name": "Professionally Verified Room Listings",
+        "description": "Each room is inspected and verified by our local team to ensure it meets high standards of quality, safety, and comfort.",
+        "image": "images/hotel.png"
+    },
+    {
+        "name": "Affordable Rates for Every Traveler",
+        "description": "Whether you're a student, professional, or digital nomad, our flexible pricing options help you save more on long or short stays.",
+        "image": "images/money.png"
+    },
+    {
+        "name": "Simple and Hassle-Free Booking Process",
+        "description": "Book instantly or request approval from trusted hosts—our system makes room reservations quick and easy.",
+        "image": "images/click.png"
+    },
+    {
+        "name": "Secure and Encrypted Payment Options",
+        "description": "Make payments with confidence through our protected platform, offering various payment methods and full encryption.",
+        "image": "images/credit-card.png"
+    },
+    {
+        "name": "Flexible Stay Durations to Fit Your Needs",
+        "description": "Choose from nightly, weekly, or long-term room rentals depending on your travel or relocation plans.",
+        "image": "images/24-7.png"
+    },
+    {
+        "name": "Local Language and Regional Support",
+        "description": "Our multilingual customer service team and local representatives are here to assist you every step of the way.",
+        "image": "images/translation.png"
+    },
+    {
+        "name": "Comfortable, Clean, and Ready-to-Stay Rooms",
+        "description": "We prioritize cleanliness, comfort, and convenience so you can feel at home no matter where you stay.",
+        "image": "images/clean.png"
+    },
+    {
+        "name": "Transparent Host Ratings and Guest Reviews",
+        "description": "Make informed decisions by reading detailed reviews and viewing ratings from previous guests before booking.",
+        "image": "images/rating.png"
+    },
+    {
+        "name": "Exclusive Member Events and Local Perks",
+        "description": "Join a vibrant community and gain access to cultural events, local guides, and special discounts in select cities.",
+        "image": "images/crowd-of-users.png"
+    }
+]
