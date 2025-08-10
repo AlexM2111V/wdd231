@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Latina Booking page</title>
+    <meta name="author" content="Alexander Mendoza">
+    <meta name="description"
+        content="This is the booking page for the Casa Latina website, which is the final project in the WDD231 course.">
+    <meta property="og:title" content="Casa Latina Booking Page">
+    <meta property="og:description"
+        content="Book your stay with Casa Latina and immerse yourself in the warmth of Latin American hospitality. Choose your city, select your room, and start your journey today.">
+    <meta property="og:url" content="https://alexm2111v.github.io/wdd231/finalproject/booking.html">
+    <meta property="og:image" content="https://alexm2111v.github.io/wdd231/finalproject/images/hero.webp">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/booking.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/booking.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="profile-picture">
+        <p><span class="casa">Casa</span><span class="latina">Latina</span></p>
+        <button id="menu" class="menu" aria-label="Open main menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="current" href="booking.html">Book a Room</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <div class="form">
+            <h1>Book your Room</h1>
+            <form method="get" action="confirmation.html" id="booking-form">
+                <label>First Name:
+                    <input type="text" name="firstName" title="Enter your first name" required
+                        autocomplete="given-name">
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" title="Enter your last name" required autocomplete="family-name">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email address" placeholder="example@mail.com"
+                        required autocomplete="email">
+                </label>
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="mobile" title="Enter your mobile phone number" required autocomplete="tel">
+                </label>
+                <label>
+                    Booking Date:
+                    <input type="date" name="booking-date" title="Select your booking date" required>
+                </label>
+                <label>
+                    City:
+                    <select name="city" title="Select the city you want to stay in" required>
+                        <option value="">-- Select City --</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="Brasilia">Brasilia</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Montevideo">Montevideo</option>
+                        <option value="Quito">Quito</option>
+                        <option value="Santiago">Santiago</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Room preference</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="room-preference" value="Standard" required>Standard</label>
+                        <label><input type="radio" name="room-preference" value="Deluxe">Deluxe</label>
+                        <label><input type="radio" name="room-preference" value="Suite">Suite</label>
+                        <label><input type="radio" name="room-preference" value="Shared">Shared</label>
+                    </div>
+                </fieldset>
+                <p id="room-booked"></p>
+                <input type="submit" value="Book Room">
+            </form>
+        </div>
+        <div class="rooms-cards">
+            <div class="card shared">
+                <h2>Shared Room $30</h2>
+                <button popovertarget="popover-shared" class="apply-button">More details</button>
+            </div>
+
+            <div class="card standard">
+                <h2>Standard Room $50</h2>
+                <button popovertarget="popover-standard" class="apply-button">More details</button>
+            </div>
+
+            <div class="card deluxe">
+                <h2>Deluxe Room $90</h2>
+                <button popovertarget="popover-deluxe" class="apply-button">More details</button>
+            </div>
+
+            <div class="card suite">
+                <h2>Suite Room $120</h2>
+                <button popovertarget="popover-suite" class="apply-button">More details</button>
+            </div>
+        </div>
+        <dialog id="popover-shared" popover>
+            <button class="close-btn" popovertarget="popover-shared" popovertargetaction="hide">&times;</button>
+            <h3>Shared Room $30</h3>
+            <p>
+                A bed in a shared space with other guests. Ideal for budget travelers, backpackers, or those seeking a
+                social
+                experience.
+            </p>
+            <ul class="bulleted">
+                <li>Shared sleeping area (bunk or single bed)</li>
+                <li>Shared bathroom</li>
+                <li>Lockers for personal items</li>
+                <li>Common areas: lounge, kitchen</li>
+            </ul>
+        </dialog>
+
+        <dialog id="popover-standard" popover>
+            <button class="close-btn" popovertarget="popover-standard" popovertargetaction="hide">&times;</button>
+            <h3>Standard Room $50</h3>
+            <p>
+                A private room with basic furnishings and amenities. Often includes a private bathroom.
+            </p>
+            <ul class="bulleted">
+                <li>1 queen or 2 twin beds</li>
+                <li>Private bathroom</li>
+                <li>Wi-Fi, TV, and air conditioning</li>
+                <li>Work desk and closet</li>
+            </ul>
+        </dialog>
+
+        <dialog id="popover-deluxe" popover>
+            <button class="close-btn" popovertarget="popover-deluxe" popovertargetaction="hide">&times;</button>
+            <h3>Deluxe Room $90</h3>
+            <p>
+                A larger, more comfortable private room with upgraded décor, views, and enhanced amenities.
+            </p>
+            <ul class="bulleted">
+                <li>King or queen bed with premium bedding</li>
+                <li>Private bathroom with upscale fixtures</li>
+                <li>Mini-fridge, coffee maker, or minibar</li>
+                <li>Better views or balcony</li>
+            </ul>
+        </dialog>
+
+        <dialog id="popover-suite" popover>
+            <button class="close-btn" popovertarget="popover-suite" popovertargetaction="hide">&times;</button>
+            <h3>Suite Room $120</h3>
+            <p>
+                A premium accommodation with separate living and sleeping areas, often with luxurious furnishings and
+                services.
+            </p>
+            <ul class="bulleted">
+                <li>Bedroom + separate living room or office space</li>
+                <li>Premium furniture and high-end design</li>
+                <li>Full Kitchen</li>
+                <li>Extra services: room service, concierge, laundry</li>
+            </ul>
+        </dialog>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/AlexM2111V/wdd231" target="_blank"><img src="images/github.svg"
+                    alt="github page" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/alexander-mendoza-v" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin" width="16" height="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16"
+                    height="16"></a>
+        </div>
+        <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
+        <p>&copy; <span id="currentYear"></span> CasaLatina. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
