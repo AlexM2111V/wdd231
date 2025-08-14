@@ -25,6 +25,10 @@ main>p{
     border: 1px solid var(--third-color);
 }
 
+h2 {
+    text-align: center;
+}
+
 .city-info p{
     text-align: justify;
     margin: 0 1rem;
@@ -90,7 +94,6 @@ footer {
 }
 
 h2 {
-    align-self: center;
     margin: 0;
 }
 
